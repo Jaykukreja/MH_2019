@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>List of staff</title>
+
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <a href="#" class="alert-link"></a>
+  <button type="button" class="btn btn-primary btn-lg pull-right"style="margin:20px;">Export .csv</button>
+
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+                    <form method="POST">
+                        <div class="row clearfix">
+                    		<div class="col-md-12 column">
+                    			<table class="table table-bordered table-hover" id="tab_logic">
+                            <% results.forEach(function(results){%>
+                    				<thead>
+                    					<tr >
+                    						<th class="text-center">
+                    							Staff ID
+                    						</th>
+                    						<th class="text-center">
+                    							First Name
+                    						</th>
+                    						<th class="text-center">
+                    							Last Name
+                    						</th>
+                    						<th class="text-center">
+                    							Role
+                    						</th>
+                                <th class="text-center">
+                    						   Registration Time
+                    						</th>
+                                <th class="text-center">
+                                  Is Blocked?
+                                </th>
+                                <th class="text-center">
+                    							Is Deleted?
+                    						</th>
+                    					</tr>
+                    				</thead>
+                    				<tbody>
+                    					<tr id='addr0'>
+                    						<td>
+                    						<input type="text" name='id0'  placeholder='Staff ID' class="form-control"/><%=result.staffId %>
+                    						</td>
+                    						<td>
+                    						<input type="text" name='fname0' placeholder='First Name' class="form-control"/><%=result.firstname %>
+                    						</td>
+                    						<td>
+                    						<input type="text" name='lname0' placeholder='Last Name' class="form-control"/><%=result.lastname %>
+                    						</td>
+                                <td>
+                    						<input type="text" name='lname0' placeholder='Role' class="form-control"/><%=result.role %>
+                    						</td>
+                                <td>
+                    						<input type="text" name='pass0' placeholder='Registration Time' class="form-control"/><%=result.registration_time %>
+                    						</td>
+                                <td>
+                    						<input type="text" name='role0' placeholder='True/False' class="form-control"/><%=result.isBlocked %>
+                    						</td>
+                                <td>
+                    						<input type="text" name='blocked0' placeholder='True/False' class="form-control"/><%=result.isDeleted %>
+                    						</td>
+                    					</tr>
+                              <tr id='addr1'></tr>
+                    				</tbody>
+                            <% }); %>
+                    			</table>
+                    		</div>
+                    	</div>
+
+                    </form>
+
+      </div>
+
+</body>
+</html>
+<!-- end document-->
