@@ -1,7 +1,8 @@
 # eKYC - KYC without Aadhar
 
 # PROBLEM STATEMENT:
-Considering the recent supreme court mandate to make Aadhar based Know Your Customer (KYC) non-mandatory all private players need to change their approach to non-Aadhar based KYC. The mandate is to collect documents such as *Proof of Address (POA) and Proof of Identity (POI)* from citizen digitize them and ensure that the identity of the person applying for the service is verified.
+Knowing your customer compliance in emerging and developing markets is a big challenge - yet today's digital age: mapping an individual's identity is a necessary step to unlock an individual's full value.
+Considering the recent supreme court mandate to make Aadhaar based Know Your Customer (KYC) non-mandatory all private players need to change their approach to non Aadhaar based KYC. The mandate is to collect documents Proof of Identity (POI) and Proof of Address (POA), digitize them and ensure that the identity of the person applying for the service is verified.
 
 # SOLUTION: 
 Our Solution is a 3 way system that includes consent of citizen, verification from the government and the third party organization that requires KYC. 
